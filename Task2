@@ -1,0 +1,6 @@
+t = str(input("Задайте слово: "))
+print("Чи в даному рядку нема цифр?")
+if not any(int.isdigit() for int in t):
+    print("Вірно, у рядку немає цифр")
+else:
+    print("Невірно, у рядку є цифри")
